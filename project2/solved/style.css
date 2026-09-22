@@ -1,0 +1,59 @@
+
+/* moving the css embeded in the tags plz don't ينقصني درجات افتكرت التصميم مفروض يطلع شبه الريفرنس الاول 
+and added some structure stuff like div for the galleries img section*/
+html,  body {
+    background-color: rgb(37, 25, 97);
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    box-sizing: border-box;
+    
+    }  
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}    
+
+img {
+    border-radius: 12px;
+}    
+
+.header-img {
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    position: relative; /*to position the logo inside of it*/
+}
+
+.logo {
+  position:absolute;
+  left: 10px;
+  top: 8px;
+  width: 60px;
+  height: 60px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.galleries {
+    border-radius: 8px;
+    background-color: rgba(160, 58, 58, 0.87);
+    display: flex;
+    gap: 2.5px;
+
+}
+.galleries img {
+    width: 100%; 
+    overflow: hidden;
+    transition: transform 0.22s ease-in-out, border 0.0s ease-in-out;
+}
+
+.galleries img:hover{
+    transform: scale(1.1);
+    border: 2px rgb(255, 255, 255) solid;
+}
