@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advanced search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="switch">
+        <input title="switch mode" type="checkbox" id="modes" onchange="location.href='proj2.html'">
+    </div>
+    <div class="content">
+        <fieldset>
+        <legend>Advanced Art Work Search</legend>
+        <header>
+            <form method="get" target="_blank" action="https://www.randyconnolly.com/tests/process.php">
+                <div class="form1">
+                    <input type="text" name="Search" placeholder="Search Titles">
+                    <div class="subject">
+                    <label for="">Subject</label>
+                    <input type="radio" name="Subject" id="h" value="History">
+                    <label for="h">History</label>
+                    <input type="radio" name="Subject" id="p" value="Person">
+                    <label for="p">Person</label>
+                    <input type="radio" name="Subject" id="l" value="Landscape">
+                    <label for="l">Landscape</label>
+                </div >
+                    <select name="Filter" id="" autocomplete="off">
+                        <option value="" disabled selected>Select Genre</option>
+                        <option value="0">Baroque</option>
+                        <option value="1">Renaissance</option>
+                        <option value="2">Realism</option>
+                    </select>
+                    <button type="submit">Filter</button>
+                </div>
+                <div class="form2">
+                    <select name="Bulk-action" id="" autocomplete="off">
+                        <option value="" disabled selected>Bulk action</option>
+                        <option value="0">Archive</option>
+                        <option value="1">Edit</option>
+                        <option value="2">Delete</option>
+                        <option value="3">Collection</option>
+                    </select>
+                    <button type="submit">Apply To All</button>
+                    <button class="search" type="submit">Search</button>
+                </div>
+            </form>
+        </header>
+        <div class="tcontainer">
+            <table celipadding="0" border="0">
+                <colgroup>
+                    <col class="checkbox">
+                    <col class="painting">
+                    <col class="title">
+                    <col class="artist">
+                    <col class="year">
+                    <col class="genre">
+                    <col class="action">
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th class="Ttitle" colspan="7">Paintings</th>
+                    </tr>
+                    <tr>
+                        <th> </th>
+                        <th> </th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Year</th>
+                        <th>Genre</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="index[]" value="0">
+                        </td>
+                        <td>
+                            <img class="paint" src="../../Project1/project1 materials/images/brera1.jpg" alt="brera1">
+                        </td>
+                        <td>
+                            <p>Portrait of Alida Christain Assink</p>
+                        </td>
+                        <td>
+                            <p>kusear</p>
+                        </td>
+                        <td>
+                            <p>1933</p>
+                        </td>
+                        <td>
+                            <p>Realism</p>
+                        </td>
+                        <td>
+                            <button><img src="edit-fill-1480-svgrepo-com.svg" alt="edit"></button>
+                            <button><img src="delete-2-svgrepo-com.svg" alt="Delete"></button>
+                            <button><img src="archive-svgrepo-com.svg" alt="Archive"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="index[]" value="1">
+                        </td>
+                        <td>
+                            <img class="paint" src="../../Project1/project1 materials/images/brera2.jpg" alt="brera2">
+                        </td>
+                        <td>
+                            <p>Portrait of Willem ||, king of the netherland</p>
+                        </td>
+                        <td>
+                            <p>kusear</p>
+                        </td>
+                        <td>
+                            <p>1039</p>
+                        </td>
+                        <td>
+                            <p>Realism</p>
+                        </td>
+                        <td>
+                            <button><img src="edit-fill-1480-svgrepo-com.svg" alt="edit"></button>
+                            <button><img src="delete-2-svgrepo-com.svg" alt="Delete"></button>
+                            <button><img src="archive-svgrepo-com.svg" alt="Archive"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="index[]" value="2">
+                        </td>
+                        <td>
+                            <img class="paint" src="../../Project1/project1 materials/images/brera3.jpg" alt="brera3">
+                        </td>
+                        <td>
+                            <p>two girls from the amesterdam orph</p>
+                        </td>
+                        <td>
+                            <p>Bchbt</p>
+                        </td>
+                        <td>
+                            <p>1900</p>
+                        </td>
+                        <td>
+                            <p>Realism</p>
+                        </td>
+                        <td>
+                            <button><img src="edit-fill-1480-svgrepo-com.svg" alt="edit"></button>
+                            <button><img src="delete-2-svgrepo-com.svg" alt="Delete"></button>
+                            <button><img src="archive-svgrepo-com.svg" alt="Archive"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="index[]" value="3">
+                        </td>
+                        <td>
+                            <img class="paint" src="../../Project1/project1 materials/images/brera4.jpg" alt="brera4">
+                        </td>
+                        <td>
+                            <p>barra4</p>
+                        </td>
+                        <td>
+                            <p>barra4</p>
+                        </td>
+                        <td>
+                            <p>1900</p>
+                        </td>
+                        <td>
+                            <p>Realism</p>
+                        </td>
+                        <td>
+                            <button><img src="edit-fill-1480-svgrepo-com.svg" alt="edit"></button>
+                            <button><img src="delete-2-svgrepo-com.svg" alt="Delete"></button>
+                            <button><img src="archive-svgrepo-com.svg" alt="Archive"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="index[]" value="4">
+                        </td>
+                        <td>
+                            <img class="paint" src="../../Project1/project1 materials/images/getty1.jpg" alt="getty1">
+                        </td>
+                        <td>
+                            <p>getty1</p>
+                        </td>
+                        <td>
+                            <p>getty1</p>
+                        </td>
+                        <td>
+                            <p>1900</p>
+                        </td>
+                        <td>
+                            <p>Realism</p>
+                        </td>
+                        <td>
+                            <button><img src="edit-fill-1480-svgrepo-com.svg" alt="edit"></button>
+                            <button><img src="delete-2-svgrepo-com.svg" alt="Delete"></button>
+                            <button><img src="archive-svgrepo-com.svg" alt="Archive"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="index[]" value="5">
+                        </td>
+                        <td>
+                            <img class="paint" src="../../Project1/project1 materials/images/getty2.jpg" alt="getty2">
+                        </td>
+                        <td>
+                            <p>getty2</p>
+                        </td>
+                        <td>
+                            <p>getty2</p>
+                        </td>
+                        <td>
+                            <p>1900</p>
+                        </td>
+                        <td>
+                            <p>Realism</p>
+                        </td>
+                        <td>
+                            <button><img src="edit-fill-1480-svgrepo-com.svg" alt="edit"></button>
+                            <button><img src="delete-2-svgrepo-com.svg" alt="Delete"></button>
+                            <button><img src="archive-svgrepo-com.svg" alt="Archive"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="index[]" value="6">
+                        </td>
+                        <td>
+                            <img class="paint" src="../../Project1/project1 materials/images/getty3.jpg" alt="getty3">
+                        </td>
+                        <td>
+                            <p>getty3</p>
+                        </td>
+                        <td>
+                            <p>getty3</p>
+                        </td>
+                        <td>
+                            <p>1900</p>
+                        </td>
+                        <td>
+                            <p>Realism</p>
+                        </td>
+                        <td>
+                            <button><img src="edit-fill-1480-svgrepo-com.svg" alt="edit"></button>
+                            <button><img src="delete-2-svgrepo-com.svg" alt="Delete"></button>
+                            <button><img src="archive-svgrepo-com.svg" alt="Archive"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="index[]" value="7">
+                        </td>
+                        <td>
+                            <img class="paint" src="../../Project1/project1 materials/images/getty4.jpg" alt="getty4">
+                        </td>
+                        <td>
+                            <p>getty4</p>
+                        </td>
+                        <td>
+                            <p>getty4</p>
+                        </td>
+                        <td>
+                            <p>1900</p>
+                        </td>
+                        <td>
+                            <p>Realism</p>
+                        </td>
+                        <td>
+                            <button><img src="edit-fill-1480-svgrepo-com.svg" alt="edit"></button>
+                            <button><img src="delete-2-svgrepo-com.svg" alt="Delete"></button>
+                            <button><img src="archive-svgrepo-com.svg" alt="Archive"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    </div>
+</body>
+
+</html>

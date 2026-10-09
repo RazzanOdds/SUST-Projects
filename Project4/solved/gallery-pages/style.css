@@ -1,0 +1,26 @@
+@media (max-width:480px) {
+    .artwork {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
+        gap: 2px;
+
+    }
+    .artwork img { 
+        width: 100%;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .artwork {
+        width: 100%;
+        background-size: cover;   
+     }
+    .artwork img { 
+        width: 45%;
+        
+    }
+}
+
+
